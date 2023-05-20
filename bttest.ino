@@ -11,11 +11,11 @@ void setup() {
 }
 
 void loop() {
-  Serial.println("AT");
+  mySerial.println("AT");
   delay(500);
-  if (Serial.available() > 0) {
-    String response = Serial.readString();
-    Serial.println("Отговор от HC-05: " + response);
+  if (mySerial.available() > 0) {
+    String response = mySerial.readString();
+    mySerial.println("Отговор от HC-05: " + response);
   }
 
   delay(1000);
