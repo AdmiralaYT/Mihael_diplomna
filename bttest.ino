@@ -6,7 +6,7 @@ const byte txPin = 2;
 SoftwareSerial mySerial (rxPin, txPin);
 
 void setup() {
-  Serial.begin(9600);
+  mySerial.begin(9600);
   
 }
 
