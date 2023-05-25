@@ -1,9 +1,5 @@
 #include <PID_v1_bc.h>
 #include <SoftwareSerial.h>
-#include <Wire.h>
-#include <LiquidCrystal_I2C.h>
-#include <DallasTemperature.h>
-#include <OneWire.h>
 
 double currentTemperature = 0.0;
 double wantedTemperature = 25.0;
